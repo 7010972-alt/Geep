@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#map {
+  position: absolute;
+  bottom: 20px;
+  right: 75px;
+  width: 400px;
+  height: 300px;
+  z-index: 13;
+}
