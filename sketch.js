@@ -877,7 +877,6 @@ function confirmed() {
               shared.normalPartyEnded = true;
               shared.normalRoundNumber = 1;
             }
-            shared.normalRoundNumber += 1
             shared.normalTime = -1
             shared.normalTimeLeft = 0
             shared.normalGuessed = false;
@@ -888,6 +887,7 @@ function confirmed() {
             if (!shared.normalMapChanged) {
               shared.normalMap = random(currentLocations)
               shared.normalMapChanged = true;
+              shared.normalRoundNumber += 1
             }
             partyChange(shared.normalMap, "normal")
           }
